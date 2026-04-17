@@ -1,4 +1,4 @@
-package secao12;
+package secao11;
 
 public class LabelsLoops {
     static void main() {
