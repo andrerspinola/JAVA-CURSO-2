@@ -32,6 +32,45 @@ public class Listas {
 
         System.out.println(precos[2]);
 
+        // 2 - Loops em arrays
+
+        // somar todos os elementos de um array
+        // acessar os elementos e condensar a soma deles em uma var.
+
+        int soma = 0;
+
+        // length = quantidade de elementos de um array
+
+        for(int i = 0; i < numeros.length; i ++){
+
+            // i valendo 0, depois 1, depois 2 ...
+            soma += numeros[i];
+
+        }
+        System.out.println("Soma dos elementos: " + soma);
+
+        // for each
+        // Nomear o item do Array
+        // Pessoas e a nomeação será pessoa
+        // frutas será fruta
+        for(String fruta : frutas){
+            System.out.println("A fruta da vez " + fruta);
+        }
+
+        // encontrar o maior valor de um array
+
+        int[] valores = {10,25,8,22,1};
+        int maiorValor = valores[0];
+
+        int j = 0;
+        while(j < valores.length){
+            if(valores[j] > maiorValor){
+                maiorValor = valores[j];
+            }
+            j++;
+        }
+        System.out.println("O maior valor é: " + maiorValor);
+
 
     }
 }
