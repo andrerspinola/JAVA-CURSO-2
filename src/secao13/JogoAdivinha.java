@@ -20,9 +20,8 @@ public class JogoAdivinha {
         while (palpite != numeroSecreto) {
 
 
-            System.out.print("Digite seu palpite: ");
+            System.out.println("Digite o seu palpite: ");
             palpite = scanner.nextInt();
-
             tentativas++;
 
 
