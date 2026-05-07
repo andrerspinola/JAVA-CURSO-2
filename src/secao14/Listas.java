@@ -87,6 +87,7 @@ public class Listas {
         }
         System.out.println(frase);
 
+
         // verificar se valor esta presente em array
         char[] letras = {'a','e','i','o','u'};
         char letraProcurada = 'i';
@@ -96,9 +97,40 @@ public class Listas {
                 break;
 
             }
+        }
+        // 4 - loops com if
+        // filtar e somar numeros pares
 
+        int somaPares = 0;
+        for(int numero : numeros){
+            if(numero % 2 == 0){
+                somaPares += numero;
+            }
+        }
+        System.out.println("Soma pares: " + somaPares);
+
+        // Exibir valores maiores que um determinado valor
+        int[] nums = {12, 6, 18, 24, 48, 5};
+
+        int limite = 10;
+
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] > limite){
+                System.out.println("numero maior encontrado: " + nums[i]);
+            }
         }
 
+        String[] linguagens = {"Java", "C", "Python", "PHP"};
+        String linguagemAlvo = "Python";
 
+        for(String linguagem : linguagens){
+            if(linguagemAlvo == linguagem){
+                System.out.println("Linguagem encontrada! Parando o loop ");
+                break;
+            }else{
+                System.out.println("Linguagem ainda não encontrada! ");
+            }
+        }
     }
+
 }
