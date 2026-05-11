@@ -203,6 +203,21 @@ public class Listas {
 
 
         // 8 - reference trap
+        int[] arrayOriginal = {1,2,3};
+        //programou muita coisa...
+        int[] arrayCopia = arrayOriginal;
+
+        arrayCopia[0] = 10;
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayCopia));
+
+        // Como evitar?
+        int[] arrayClone = arrayOriginal.clone();
+        arrayClone[0] = 999;
+
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayClone));
+
 
 
     }
