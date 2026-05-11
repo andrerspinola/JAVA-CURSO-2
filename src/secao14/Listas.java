@@ -1,6 +1,8 @@
 package secao14;
 
 // Array => subs. a classe Array
+import java.util.Arrays;
+
 
 public class Listas {
     static void main() {
@@ -153,6 +155,19 @@ public class Listas {
             }
         }
         System.out.println(frutas[0]);
+
+        // 6 - método toString
+
+        // Classes no java,que vão ter metodos utilitários, o Arrays é uma delas
+        String dadosNumericos = Arrays.toString(numeros);
+
+        System.out.println(dadosNumericos);
+
+        String dadosFrutas = Arrays.toString(frutas);
+        System.out.println(dadosFrutas);
+
+        int[] teste = new int [3];
+        System.out.println(Arrays.toString(teste));
 
     }
 
