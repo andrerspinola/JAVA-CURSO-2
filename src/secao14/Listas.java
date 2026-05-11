@@ -193,7 +193,7 @@ public class Listas {
         System.out.println(Arrays.toString(novoFrutas));
 
         //ex 3: usando ArrayList
-        java.util.ArrayList<String> listaFrutas = new java.util.Arraylist<>(Arrays.asList("Maça", "Banana","Laranja"));
+        ArrayList<String> listaFrutas = new ArrayList<>(Arrays.asList("Maça", "Banana","Laranja"));
         System.out.println(listaFrutas);
 
         listaFrutas.add("Manga");
