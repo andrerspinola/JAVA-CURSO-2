@@ -2,6 +2,7 @@ package secao14;
 
 // Array => subs. a classe Array
 import java.util.Arrays;
+import java.util.ArrayList;
 
 
 public class Listas {
@@ -200,6 +201,8 @@ public class Listas {
 
         System.out.println(listaFrutas);
 
+
+        // 8 - reference trap
 
 
     }
