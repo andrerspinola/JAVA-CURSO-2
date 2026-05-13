@@ -13,5 +13,6 @@ public class exercicios {
         }
         System.out.println(Arrays.toString(arrayOriginal));
         System.out.println(Arrays.toString(arrayInvertido));
+
     }
 }
