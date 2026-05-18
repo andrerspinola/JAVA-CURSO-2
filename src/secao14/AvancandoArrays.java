@@ -65,5 +65,25 @@ public class AvancandoArrays {
 
         int sum = Arrays.stream(values).sum();
         System.out.println(sum);
+
+        // Arrays dinamicos
+        ArrayList<String> frutas = new ArrayList<>();
+        System.out.println(frutas);
+
+        frutas.add("Maçã");
+        frutas.add("Banana");
+
+        for(String fruta : frutas){
+            System.out.println(fruta);
+        }
+        frutas.remove("Banana");
+        System.out.println(frutas);
+
+        frutas.remove(0);
+        System.out.println(frutas);
+
+        String frutaEspecifica = frutas.get(0);
+        System.out.println(frutaEspecifica);
+
     }
 }
