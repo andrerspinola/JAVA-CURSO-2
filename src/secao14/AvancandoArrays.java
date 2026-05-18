@@ -41,9 +41,29 @@ public class AvancandoArrays {
 
         for(int[] linha : matriz){
             System.out.println(Arrays.toString(linha));
-
         }
 
+        // Imprimir  matrix, sem foreach
+        System.out.println(Arrays.deepToString(matriz));
 
+        // 2 - Manipulação avançada
+        int[] original = {1,2,2,3};
+
+        int[] copia = Arrays.copyOf(original, 2);
+        System.out.println(Arrays.toString(copia));
+
+        // fill - preenchimento
+        int[] numeros = new int[5];
+        System.out.println(Arrays.toString(numeros));
+        Arrays.fill(numeros,5);
+        System.out.println(Arrays.toString(numeros));
+
+        // transformação de arrays para stream
+        int[] values = {1,2,3,4,5};
+
+        // fazer uma soma dos elementos.
+
+        int sum = Arrays.stream(values).sum();
+        System.out.println(sum);
     }
 }
